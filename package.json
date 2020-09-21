@@ -1,0 +1,29 @@
+{
+  "name": "microservices-app",
+  "description": "Express Gateway Instance Bootstraped from Command Line",
+  "repository": {},
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-node server.js",
+    "docker": "docker run -it -p 8080:8080 microservicios",
+    "start-container": "docker-compose up"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-gateway": "^1.16.10",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "pg-promise": "^10.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "nodemon": "^2.0.4"
+  }
+}
